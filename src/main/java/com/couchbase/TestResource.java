@@ -97,6 +97,7 @@ public class TestResource {
                                     pool.shutdown();
                                 }
                             }
+                            tri.incrementAndGet();
 							/* End couchbase client method */
                         } finally {
                             long now = System.currentTimeMillis();
